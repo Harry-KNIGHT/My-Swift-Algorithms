@@ -4,5 +4,6 @@
         <page name='InverserUneChaine'/>
         <page name='UneMajSurDeux'/>
         <page name='TrouverLePlusGrandNombre'/>
+        <page name='RemoveBiggestNumbers'/>
     </pages>
 </playground>
