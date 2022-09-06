@@ -3,5 +3,6 @@
     <pages>
         <page name='InverserUneChaine'/>
         <page name='UneMajSurDeux'/>
+        <page name='TrouverLePlusGrandNombre'/>
     </pages>
 </playground>
