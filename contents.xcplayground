@@ -6,5 +6,6 @@
         <page name='TrouverLePlusGrandNombre'/>
         <page name='RemoveBiggestNumbers'/>
         <page name='TwoRandomNumbers'/>
+        <page name='NumbersOnly'/>
     </pages>
 </playground>
