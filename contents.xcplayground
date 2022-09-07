@@ -7,5 +7,6 @@
         <page name='RemoveBiggestNumbers'/>
         <page name='TwoRandomNumbers'/>
         <page name='NumbersOnly'/>
+        <page name='MinMax'/>
     </pages>
 </playground>
