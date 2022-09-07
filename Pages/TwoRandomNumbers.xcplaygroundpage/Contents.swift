@@ -58,7 +58,7 @@ print(randomSecondNumbersB(400))
 
 //Better solution
 func randomSecondNumbersC(_ number: Int) -> Int {
-	return (number < 99 || number > 999 ? 0 : ((number / 100) * 100) + Int.random(in: 0...99))
+	return (number < 100 || number > 999 ? 0 : ((number / 100) * 100) + Int.random(in: 0...99))
 }
 print(randomSecondNumbersC(200))
 
