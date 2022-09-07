@@ -38,7 +38,6 @@ func randomSecondNumbersA(_ number: String) -> String {
 
 print(randomSecondNumbersA("300"))
 
-//Better solution
 func randomSecondNumbersB(_ number: Int) -> String {
 
 	if number < 100 || number > 999 {
@@ -55,8 +54,13 @@ func randomSecondNumbersB(_ number: Int) -> String {
 	}
 	return finalNumber
 }
-
 print(randomSecondNumbersB(400))
+
+//Better solution
+func randomSecondNumbersC(_ number: Int) -> Int {
+	return (number < 99 || number > 999 ? 0 : ((number / 100) * 100) + Int.random(in: 0...99))
+}
+print(randomSecondNumbersC(200))
 
 
 //: [Next](@next)
