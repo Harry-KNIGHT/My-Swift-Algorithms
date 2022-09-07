@@ -9,5 +9,6 @@
         <page name='NumbersOnly'/>
         <page name='MinMax'/>
         <page name='HowManyVowelsInString'/>
+        <page name='ShuffleArray'/>
     </pages>
 </playground>
