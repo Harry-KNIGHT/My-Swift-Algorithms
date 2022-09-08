@@ -10,5 +10,6 @@
         <page name='MinMax'/>
         <page name='HowManyVowelsInString'/>
         <page name='ShuffleArray'/>
+        <page name='IsPerfectSquare'/>
     </pages>
 </playground>
