@@ -11,6 +11,5 @@
         <page name='HowManyVowelsInString'/>
         <page name='ShuffleArray'/>
         <page name='IsPerfectSquare'/>
-        <page name='WhatsMyAge'/>
     </pages>
 </playground>
