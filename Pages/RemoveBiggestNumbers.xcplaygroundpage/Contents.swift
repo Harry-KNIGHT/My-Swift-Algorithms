@@ -13,7 +13,7 @@ import Foundation
  retourner [2]
  */
 
-func findSmallerNumber(_ numbers: inout [Int]) -> [Int] {
+func findSmallerNumberA(_ numbers: inout [Int]) -> [Int] {
 	var smallerNumber = numbers[0]
 
 	for number in numbers {
@@ -26,8 +26,14 @@ func findSmallerNumber(_ numbers: inout [Int]) -> [Int] {
 	return Array(Set(numbers))
 }
 
-var array = [10, 5, 2, 200, 45, 90, 103, 20]
+var numbersInFunctionArgument = [10, 5, 2, 200, 2, 45, 90, 103, 20]
 
-findSmallerNumber(&array)
+findSmallerNumberA(&numbersInFunctionArgument)
+
+func findSmallerNumberB(_ numbers: [Int]) -> [Int] {
+	let filteredNumbers = numbers.filter { $0 <= $0 + 1 }
+	return Array(Set(filteredNumbers))
+}
+print(findSmallerNumberB(numbersInFunctionArgument))
 
 //: [Next](@next)
