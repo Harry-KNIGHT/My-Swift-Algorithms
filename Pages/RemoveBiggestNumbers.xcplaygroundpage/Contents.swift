@@ -13,23 +13,21 @@ import Foundation
  retourner [2]
  */
 
-func findSmallerNumber(_ numbers: [Int]) {
-	var mappedNumbers = numbers.map { $0 }
+func findSmallerNumber(_ numbers: inout [Int]) -> [Int] {
 	var smallerNumber = numbers[0]
-	//var index = 0
 
-	for number in mappedNumbers {
+	for number in numbers {
 		if number < smallerNumber {
 			smallerNumber = number
 		} else {
-			mappedNumbers.removeAll { $0 > smallerNumber }
+			numbers.removeAll { $0 > smallerNumber }
 		}
-	//index + 1
 	}
-	print(smallerNumber)
-	print(mappedNumbers)
+	return Array(Set(numbers))
 }
 
-findSmallerNumber([10, 5, 2, 200, 45, 90, 103, 20])
+var array = [10, 5, 2, 200, 45, 90, 103, 20]
+
+findSmallerNumber(&array)
 
 //: [Next](@next)
